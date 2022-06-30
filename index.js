@@ -59,9 +59,11 @@ app.get('/delete-task',(req,res)=>{
     var count = Object.keys(id).length;
     for(let i=0;i<count;i++){
         Task.findByIdAndDelete(Object.keys(id)[i],(err)=>{
-            console.log('error in deleting the task.');
+            if(err){
+                console.log('error in deleting the task.');
+            }
             return;
-        })
+        });
     }
     return res.redirect('back');
 })

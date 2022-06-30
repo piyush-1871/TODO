@@ -9,14 +9,14 @@
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-         <!-- font awesome link -->
+        <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- font awesome link -->         
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
     </head>
-   <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <body>
-<section class="container">
+        <section class="container">
         <h1 align="center">TODO APP</h1>
 
             <!-- form to create task -->
@@ -52,8 +52,8 @@
             
             </table>
                   
-  </form>
-    </section>
+        </form>
+        </section>
         <div>          
                 <h1 align="center">TASKS LIST</h1>
 
@@ -64,7 +64,7 @@
                               <th>Select</th>
                               <th>Task</th>
                               <th>Category</th>
-                            <th>due date</th>
+                            <th>Due Date</th>
                             </tr>
                           </thead>
                         <% for(let i of task) { %>
@@ -72,7 +72,7 @@
 <tr>
                                <td> <input type="checkbox" name="<%= i._id %>" ></td>
                                <td><%= i.description %></td>
-                               <td><%= i.category %></td>
+                               <td class="category-background-<%=i.category%>"><%= i.category %></td>
                                <td><%= i.date %></p></td>
 </tr>
                     
@@ -88,6 +88,7 @@
 
         
         </div>
+
     </body>
     
 </html>

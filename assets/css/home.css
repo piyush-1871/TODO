@@ -14,28 +14,19 @@
   /* main body part */
   body {
     margin: 20px;
-    background: #0f2027; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #2c5364,
-      #203a43,
-      #0f2027
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #2c5364,
-      #203a43,
-      #0f2027
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: black;
+    color: white;
   }
   
   /* h1 style */
   h1 {
     font-size: 3rem;
+    color: black;
   }
   
   ul {
     list-style: none;
+    
   }
   
   input[type="text"] {
@@ -44,24 +35,32 @@
     border: none;
     outline: none;
     width: 100%;
+    color: black;
   }
-  
+  .table-active th{
+    color: black;
+    text-transform: capitalize;
+  }
   /* styling all label  */
   label {
     display: block;
     font-size: 2.5rem;
     text-transform: uppercase;
+    
   }
-  
+  .table td{
+    text-transform: capitalize;
+  }
   /* styling all container */
   .container {
     background-color: #eee;
-    border-radius: 5%;
+    border-radius: 20px;
     width: 60%;
     margin: 0 auto;
-    box-shadow: -1px -1px 6px 8px #888888;
+    padding: 5rem;
+    /* box-shadow: -1px -1px 6px 8px #888888; */
   }
-  
+
   .container h1 {
     text-align: center;
   }
@@ -89,6 +88,13 @@
   }
   
   /* button style for add and delete */
+  .btn{
+    font-size: medium;
+  }
+  .btn-danger{
+    width: 11rem;
+    height: 4rem;
+  }
   button {
     display: inline-block;
     border-radius: 10px;
@@ -182,3 +188,19 @@
   .todo__category-cleaning {
     background-color: green;
   }
+
+.category-background-WORK{
+  background-color: purple;
+}
+.category-background-PERSONAL{
+  background-color: blue;
+}
+.category-background-SCHOOL{
+  background-color: green;
+}
+.category-background-CLEANING{
+  background-color: aqua;
+}
+.category-background-OTHER{
+  background-color: brown;
+}
